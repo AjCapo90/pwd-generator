@@ -1,0 +1,90 @@
+@font-face {
+    src: url('fonts/karla.ttf');
+    font-family: Karla;
+}
+
+@font-face {
+    src: url('fonts/inter.ttf');
+    font-family: Inter;
+}
+
+:root {
+    --main-bg-color: #1F2937;
+    --secondary-bg-color: #273549;
+    --white-color: #fff;
+    --green-color: #10B981;
+    --primary-font: Inter;
+    --secondary-font: Karla;
+    --border-radius: 6px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    font-family: var(--primary-font), sans-serif;
+}
+
+main {
+    margin: 20px 40px;
+}
+
+#title {
+    font-weight: 800;
+    font-family: var(--secondary-font), sans-serif;
+    font-size: 40px;
+}
+
+#subtitle {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#generate-pwd {
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+    background-color: var(--green-color);
+    font-family: var(--secondary-bg-color);
+    font-weight: 500;
+    margin: 40px 0 30px
+}
+
+.green {
+    color: var(--green-color);
+}
+
+.new-line {
+    display: block;
+}
+
+.line-divisor {
+    background-color: var(--secondary-bg-color);
+    height: 2px;
+    border: none;
+}
+
+.pwd-el-section {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 40px;
+}
+
+.pwd-el {
+    background-color: var(--secondary-bg-color);
+    width: 49%;
+    height: auto;
+    min-height: 30px;
+    padding: 10px 20px;
+    word-break: break-all;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copied-el {
+    display: none;
+}
